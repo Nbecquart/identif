@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".java.compte"
+    android:background="@color/gris1">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/text2"
+            android:textSize="40dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin = "30dp"
+            android:textColor="@color/noir"
+            android:text="Paramètre du compte"></TextView>
+
+
+        <TextView
+            android:id="@+id/text3"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin = "20dp"
+            android:textColor="@color/noir"
+            android:text="Changer de mot de passe"></TextView>
+
+        <EditText
+            android:id="@+id/ancien_mot_de_passe"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Ancien mot de passe"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/mot_de_passe"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Nouveau mot de passe"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/commentaire"
+            android:textSize="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin = "30dp"
+            android:textColor="@color/noir"
+            android:text=""></TextView>
+
+        <Button
+            android:id="@+id/modifier"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:text="Modifier" />
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

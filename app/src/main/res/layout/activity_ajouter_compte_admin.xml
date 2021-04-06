@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".java.jeu_solo"
+    android:background="@color/gris1">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/text2"
+            android:textSize="40dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin = "30dp"
+            android:textColor="@color/noir"
+            android:text="Ajouter un compte"></TextView>
+
+        <TextView
+            android:id="@+id/text3"
+            android:textSize="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin = "30dp"
+            android:textColor="@color/noir"
+            android:text="Test"></TextView>
+
+        <EditText
+            android:id="@+id/pseudo"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="pseudo"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/mdp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="mot de passe"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/ajouter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:text="Ajouter" />
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
